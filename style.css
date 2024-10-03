@@ -1,9 +1,9 @@
 body{
-    padding: 100px;
     background: url(https://cdn.pixabay.com/photo/2016/11/23/15/23/cosmos-1853491_1280.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
+    
    
 }
 
@@ -18,6 +18,7 @@ body{
     box-sizing: border-box;
 }
 #neptune{
+    position: relative;
     width: 900px;
     height: 900px;
     border: 1px solid white;
@@ -28,37 +29,43 @@ body{
 
 }
 #neptunepic{
-    width: 90px;
-    
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     position: absolute;
-    top: 55px;
-    animation: rotate 25s linear infinite;
+    top: -10px;
+    right: 230px;
+   
 }
 #uranus{
+    position: relative;
     width: 800px;
     height: 800px;
     border: 1px solid white;
     border-radius: 50%;
     margin-top: 50px;
+    animation: rotate 20s linear infinite;
 
 
 }
 #uranuspic{
+    
     width: 80px;
     height: 80px;
     border-radius: 50%;
     position: absolute;
-    left: 300px;
-    top: 170px;
-   
+    left: 600px;
+    top: 680px;
+    
 }
 #saturn{
+    position: relative;
     width: 700px;
     height: 700px;
     border: 1px solid white;
     border-radius: 50%;
     margin-top: 50px;
+    animation: rotate 20s linear infinite;
 }
 #saturnpic{
     width: 80px;
@@ -66,14 +73,16 @@ body{
     border-radius: 50%;
     position: absolute;
     right: 400px;
-    top: 180px;
+    top: 650px;
 }
 #jupiter{
+    position: relative;
     width: 600px;
     height: 600px;
     border: 1px solid white;
     border-radius: 50%;
     margin-top: 50px;
+    animation: rotate 15s linear infinite;
 
 }
 #jupiterpic{
@@ -81,10 +90,11 @@ body{
     height: 70px;
     border-radius: 50%;
     position: absolute;
-    left: 230px;
-    top: 600px;
+    left: 250px;
+    top: 560px;
 }
 #mars{
+    position: relative;
     width: 500px;
     height: 500px;
     border: 1px solid white;
@@ -97,11 +107,12 @@ body{
     height: 70px;
     border-radius: 50%;
     position: absolute;
-    bottom:  265px;
-    right: 560px;
+    bottom:  1px;
+    right: 340px;
     
 }
 #earth{
+    position: relative;
     width: 400px;
     height: 400px;
     border: 1px solid white;
@@ -115,10 +126,11 @@ body{
     height: 70px;
     border-radius: 50%;
     position: absolute;
-    right: 400px;
-    top: 680px;
+    right: 360px;
+    top: 150px;
 }
 #venus{
+    position: relative;
     width: 300px;
     height: 300px;
     border: 1px solid white;
@@ -130,10 +142,11 @@ body{
     height: 70px;
     border-radius: 50%;
     position: absolute;
-    left: 370px;
-    top: 500px;
+    left:0px;
+    top: 210px;
 }
 #mercury{
+    position: relative;
     width: 200px;
     height: 200px;
     border: 1px solid white;
@@ -145,14 +158,19 @@ body{
     height: 60px;
     border-radius: 50%;
     position: absolute;
-    bottom: 500px;
-    right: 420px;
+    bottom: -35px;
+    right: 60px;
 }
 #sunpic{
     width: 140px;
     height: 140px;
     border-radius: 50%;
     position: absolute;
-    bottom: 470px;
-    left: 480px;
+    bottom: 30px;
+    left: 30px;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
 }
